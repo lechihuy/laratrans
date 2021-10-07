@@ -1,11 +1,14 @@
 {
     "name": "lechihuy/laratrans",
+    "description": "Support multiple language resources for Laravel.",
+    "homepage": "https://github.com/lechihuy/laratrans",
     "authors": [
         {
             "name": "Lê Chí Huy",
             "email": "lechihuy1062001@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": "^8.0"
     },
