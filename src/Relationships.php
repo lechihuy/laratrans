@@ -35,7 +35,8 @@ trait Relationships
      */
     public function getTranslationModelName(): string
     {
-        return 'App\\Models\\Translatable\\' . class_basename(get_called_class()) . 'Translation';
+        return rtrim(app('locale')->translationNamespace(), '\\')
+            . '\\' . class_basename(get_called_class()) . 'Translation';
     }
 
     /**

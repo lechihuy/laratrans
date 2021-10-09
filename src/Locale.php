@@ -72,12 +72,12 @@ class Locale
     }
 
     /**
-     * Determine autoload translations.
+     * Get the default namespace of translation model.
      *
-     * @return bool
+     * @return string
      */
-    public function hasAutoloadTranslations(): bool
+    public function translationNamespace(): string
     {
-        return config('translatable.autoload_translations', false);
+        return config('translatable.namespace', 'App\Models\Translation');
     }
 }
