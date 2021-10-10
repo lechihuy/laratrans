@@ -68,7 +68,7 @@ class Post extends Model
 
 You need to declare eager loading to it work. The package that offers two eager loadings are `translations` and `translation`.
 
-If you serialize a translatable model with `translations` eager loading, the response you can be given as bellow:
+If you serialize a translatable model with `translations` eager loading, the response can be given as bellow:
 ```json
 {
     "id": 1,
